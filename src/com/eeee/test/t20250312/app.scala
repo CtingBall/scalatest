@@ -1,0 +1,23 @@
+package com.eeee.test.t20250312
+
+object app {
+  def main(args: Array[String]): Unit = {
+    var f1:scala.Function2[scala.Int,scala.Int,scala.Int] = (a:scala.Int,b:scala.Int) => a + b
+//    var f1:scala.Function2[scala.Int,scala.Int,scala.Int] => (_ + _)
+
+    //这次学的是lambda表达式
+    var f2:scala.Function2[scala.Int,scala.Int,scala.Int] = (a:scala.Int,b:scala.Int) => if (a > b) a else b
+//    var f2:(scala.Int, scala.Int) => scala.Int = (a:scala.Int, b:scala.Int) => if (a > b) a else b 这是语法糖形式
+
+
+    var f3:scala.Function1[scala.Int,scala.Int] = (a:scala.Int) => a * a
+
+    println("这是f1,"+f1(7,8))
+    println("这是f2,"+f2(7,8))
+    println("这是f3,"+f3(7))
+
+    println(((a:scala.Int) => a)(1))
+
+    def add1(a:scala.Int,b:scala.Int):scala.Int = a + b
+  }
+}
