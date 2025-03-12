@@ -26,5 +26,16 @@ object app {
     def sum(nums: Int*): Int = nums.sum
     println(sum(1, 2, 3, 4, 5))
 
+    //定义一个具名函数，用于计算一个整数的任意次幂（负数不算），幂默认为2，并测试
+    def ming(a:Int,b:Int = 2) : Int = {
+      var ji = 1
+      var c = 0
+      while (c < b) {
+        ji *= a;
+        c += 1
+      }
+      ji
+    }
+    println(ming(0))
   }
 }
