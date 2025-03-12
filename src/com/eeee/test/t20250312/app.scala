@@ -18,6 +18,13 @@ object app {
 
     println(((a:scala.Int) => a)(1))
 
-    def add1(a:scala.Int,b:scala.Int):scala.Int = a + b
+    def add1(a:scala.Int)(b:scala.Int):scala.Int = a + b
+    println(add1(51)(15))
+    def add2(a:scala.Int,b:scala.Int):scala.Int = a + b
+
+    //定义一个具名函数，用于计算任意个整数的和，并测试
+    def sum(nums: Int*): Int = nums.sum
+    println(sum(1, 2, 3, 4, 5))
+
   }
 }
