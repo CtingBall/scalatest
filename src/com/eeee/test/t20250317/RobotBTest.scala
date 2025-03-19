@@ -5,8 +5,8 @@ object RobotBTest {
     var r = new RobotB("X",15,"Y")
     var rf = new RobotB("X",1)
 
-    println(rf.name)
-    println(rf.age)
-    println(rf.model)
+//    println(rf.name)
+//    println(rf.age)
+//    println(rf.model)
   }
 }
